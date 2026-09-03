@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Golden Fork Hotel & Restaurant</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Golden Fork</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <h1>Book a Table or Room</h1>
+        <p>We can't wait to host you</p>
+    </section>
+
+    <main>
+        <section class="form-section">
+            <form action="booking-success.html" method="POST">
+                <fieldset>
+                    <legend>Guest Details</legend>
+
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="080XXXXXXXX" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Booking Details</legend>
+
+                    <label for="booking-type">What are you booking?</label>
+                    <select id="booking-type" name="booking-type" required>
+                        <option value="">-- Select an option --</option>
+                        <option value="table">A Table (Restaurant)</option>
+                        <option value="room">A Room (Hotel)</option>
+                        <option value="both">Both</option>
+                    </select>
+
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Time (for table booking)</label>
+                    <input type="time" id="time" name="time">
+
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" id="guests" name="guests" min="1" max="20" value="1" required>
+
+                    <label>Room Type (if applicable)</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="room-type" value="standard"> Standard</label>
+                        <label><input type="radio" name="room-type" value="deluxe"> Deluxe</label>
+                        <label><input type="radio" name="room-type" value="executive"> Executive Suite</label>
+                        <label><input type="radio" name="room-type" value="presidential"> Presidential Suite</label>
+                    </div>
+
+                    <label for="message">Special Requests</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Any special requests? (optional)"></textarea>
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="newsletter" value="yes">
+                        Sign me up for offers and updates
+                    </label>
+                </fieldset>
+
+                <button type="submit">Confirm Booking</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Golden Fork Hotel & Restaurant. All Rights Reserved.</p>
+        <p>Follow us:
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+</body>
+</html>

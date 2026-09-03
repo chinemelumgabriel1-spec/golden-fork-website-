@@ -1,0 +1,328 @@
+/* ===== Reset & Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #faf8f5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ===== Header & Navigation ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4af37;
+}
+
+/* ===== Hero Section (Home page) ===== */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hero.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn, .btn-secondary {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn {
+    background-color: #d4af37;
+    color: #1a1a1a;
+}
+
+.btn:hover {
+    background-color: #b8942e;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #1a1a1a;
+    color: #1a1a1a;
+}
+
+.btn-secondary:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* ===== Page Banner (inner pages) ===== */
+.page-banner {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.page-banner h1 {
+    font-size: 2rem;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+/* ===== Main Content Spacing ===== */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    border-bottom: 3px solid #d4af37;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* ===== Card Grids (Highlights, Team, Rooms) ===== */
+.highlight-cards, .team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card {
+    flex: 1 1 280px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0 5px;
+    color: #1a1a1a;
+}
+
+/* ===== Tables (Menu & Rooms) ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+thead {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+th, td {
+    padding: 14px 16px;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #faf8f5;
+}
+
+/* ===== Gallery Grid ===== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* ===== Forms (Booking & Contact) ===== */
+.form-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+legend {
+    font-weight: bold;
+    color: #1a1a1a;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.radio-group label,
+.checkbox-label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+button[type="submit"] {
+    background-color: #d4af37;
+    color: #1a1a1a;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #b8942e;
+}
+
+/* ===== Contact Page ===== */
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contact-info, .contact-form {
+    flex: 1 1 400px;
+}
+
+.contact-info dl dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-info dl dd {
+    margin-left: 0;
+    color: #555;
+}
+
+.map-section iframe {
+    border-radius: 8px;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+footer a {
+    color: #d4af37;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}
